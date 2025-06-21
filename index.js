@@ -1,3 +1,4 @@
+// index.js
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -12,13 +13,27 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://portfolio-website-tau-azure.vercel.app'],
-    methods: ['GET', 'POST'],
-    credentials: true
-  }
-});
+
+// Allow CORS origins
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  process.env.FRONTEND_URL,
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
 
 // Environment variable validation
 const requiredEnvVars = ['MONGO_URI', 'JWT_SECRET', 'GITHUB_TOKEN', 'VERCEL_TOKEN', 'GITHUB_USERNAME'];
@@ -28,27 +43,28 @@ if (missingEnvVars.length > 0) {
   process.exit(1);
 }
 
-// Middleware
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://portfolio-website-tau-azure.vercel.app'],
-  credentials: true
-}));
-app.use(express.json());
-
-// MongoDB Connection
+// MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err.message, err.stack));
+  .catch(err => console.error('MongoDB connection error:', err.message));
 
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/chat', chatRoutes);
 
-// Socket.IO
+// Socket.IO config
+const io = new Server(server, {
+  cors: {
+    origin: allowedOrigins,
+    methods: ['GET', 'POST'],
+    credentials: true,
+  },
+});
+
 io.on('connection', (socket) => {
   console.log('New client connected');
-  
+
   socket.on('chatMessage', (msg) => {
     io.emit('message', msg);
   });
