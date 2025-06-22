@@ -1,4 +1,3 @@
-// index.js
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -8,11 +7,17 @@ import http from 'http';
 import authRoutes from './routes/auth.js';
 import portfolioRoutes from './routes/portfolio.js';
 import chatRoutes from './routes/chatRoutes.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
+
+// Resolve __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Allow CORS origins
 const allowedOrigins = [
@@ -20,7 +25,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'https://portfolio-website-tau-azure.vercel.app',
   process.env.FRONTEND_URL,
-];
+].filter(Boolean); // Remove undefined values
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -35,6 +40,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// Serve static files from the frontend build
+const buildPath = path.join(__dirname, '../client/build');
+app.use(express.static(buildPath));
 
 // Environment variable validation
 const requiredEnvVars = ['MONGO_URI', 'JWT_SECRET', 'GITHUB_TOKEN', 'VERCEL_TOKEN', 'GITHUB_USERNAME'];
@@ -53,6 +62,11 @@ mongoose.connect(process.env.MONGO_URI)
 app.use('/api/auth', authRoutes);
 app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/chat', chatRoutes);
+
+// Catch-all route to serve index.html for client-side routing
+app.get('/', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+});
 
 // Socket.IO config
 const io = new Server(server, {
