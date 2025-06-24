@@ -25,7 +25,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'https://portfolio-website-tau-azure.vercel.app',
   process.env.FRONTEND_URL,
-].filter(Boolean); // Remove undefined values
+].filter(Boolean);
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -42,7 +42,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Serve static files from the frontend build
-const buildPath = path.join(__dirname, '../client/build');
+const buildPath = path.join(__dirname, '../dist');
 app.use(express.static(buildPath));
 
 // Environment variable validation
@@ -64,7 +64,7 @@ app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/chat', chatRoutes);
 
 // Catch-all route to serve index.html for client-side routing
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
 
