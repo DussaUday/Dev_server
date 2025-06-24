@@ -64,7 +64,7 @@ app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/chat', chatRoutes);
 
 // Catch-all route to serve index.html for client-side routing
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
 
