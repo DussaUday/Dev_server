@@ -2,134 +2,147 @@
   "intents": [
     {
       "category": "Overview",
-      "topic": "DevCraft Overview",
-      "tags": [ "devcraft", "overview", "platform"],
-      "answer": "DevCraft is a comprehensive platform for building professional websites, including portfolios, online stores, blogs, business sites, non-profits, and more. It offers customizable templates, SEO tools, e-commerce functionality, responsive design, analytics integration, and third-party integrations for social media, payment gateways, and CRM systems. Built by three tech enthusiasts, DevCraft is in its early stages with a drag-and-drop editor under development."
+      "topic": "DevCraftz Overview",
+      "tags": ["devcraftz", "overview", "platform"],
+      "answer": "DevCraftz is a comprehensive platform for building professional websites, including portfolios, online stores, blogs, business sites, non-profits, and more. It offers customizable templates, SEO tools, e-commerce functionality, responsive design, analytics integration, and third-party integrations for social media, payment gateways, and CRM systems. Built by two tech enthusiasts, DevCraftz is in its early stages with a drag-and-drop editor under development."
     },
     {
       "category": "Overview",
-      "topic": "Who Made DevCraft",
-      "tags": ["developers", "creators", "who made you", "team", "create", "boss"],
-      "answer": "DevCraft was created by three tech enthusiasts: Uday, Manikanta, and Akshay. Contact them at dussauday469@gmail.com or yalamanchilimanikanta005@gmail.com for inquiries."
-    }, {
+      "topic": "Who Made DevCraftz",
+      "tags": ["creators", "who made you", "founder", "create", "boss"],
+      "answer": "DevCraftz was created by two tech enthusiast: Uday and Manikanta. Contact team at devcraftz.in@gmail.com and  dussauday469@gmail.com also Whatsapp number 6304478845 for inquiries."
+    },
+    {
       "category": "Overview",
-      "topic": "Say about you",
-      "tags": ["about", "describe ", "yourself", "introduce", "intro", "self introduction","who are you", "who made you", "who is ira"],
-      "answer": "I'm Irah, an AI chatbot here to assist you with DevCraft—a powerful platform for building professional websites like portfolios, online stores, blogs, business sites, and more. DevCraft offers customizable templates, SEO tools, responsive design, e-commerce features, analytics, and integrations with social media, payment gateways, and CRMs. Built by three tech enthusiasts, it's currently in early development with a drag-and-drop editor on the way."
+      "topic": "Team",
+      "tags": ["developers", "team", "development team", "professionals", "engineers"],
+      "answer": "DevCraftz is built by a passionate team: Uday and Manikanta . They aim to simplify website creation through a powerful, user-friendly platform. Together, they're crafting a seamless drag-and-drop experience for all users."
+    },
+    {
+      "category": "Overview",
+      "topic": "Say About You",
+      "tags": ["about", "describe", "yourself", "introduce", "intro", "self introduction", "who are you", "who made you", "who is ira"],
+      "answer": "I'm Irah, an AI chatbot here to assist you with DevCraftz—a powerful platform for building professional websites like portfolios, online stores, blogs, business sites, and more. DevCraftz offers customizable templates, SEO tools, responsive design, e-commerce features, analytics, and integrations with social media, payment gateways, and CRMs. Built by three tech enthusiasts, it's currently in early development with a drag-and-drop editor on the way."
     },
     {
       "category": "Pricing",
       "topic": "Basic Portfolio",
-      "tags": ["pricing", "portfolio", "basic"],
-      "answer": "Price: ₹799 (India), $99 (International). Features: 1 theme, 5 pages, 1 year of hosting (additional fees may apply), basic support, responsive design. Ideal for individuals starting a personal portfolio with essential features."
+      "tags": ["pricing", "basic", "portfolio", "free portfolio", "free"],
+      "answer": "Create your free student portfolio or any shoping website in minutes — just sign up, choose a template, fill in your details, and get your personal portfolio link instantly. Want more? Upgrade to the Prime Portfolio Plan for just ₹799 (India) or $99 (International) to unlock 1 premium theme, up to 5 custom pages, 1 year of hosting (additional fees may apply), basic support, and a fully responsive design — perfect for showcasing a professional online presence."
     },
     {
       "category": "Pricing",
       "topic": "Premium Portfolio",
-      "tags": ["pricing", "portfolio", "premium"],
-      "answer": "Price: ₹1399 (India), $199 (International). Features: 3 themes, 10 pages, 2 years of hosting, premium support, SEO optimization tools, analytics integration. Suited for professionals needing advanced customization and extended hosting."
+      "tags": ["pricing", "premium", "portfolio"],
+      "answer": "Price: ₹1199 (India), $199 (International). Features: 3 themes, 10 pages, 2 years of hosting, premium support, SEO optimization tools, analytics integration. Suited for professionals needing advanced customization and extended hosting."
     },
     {
       "category": "Pricing",
       "topic": "E-commerce Website",
-      "tags": ["pricing", "e-commerce", "website"],
+      "tags": ["pricing", "e-commerce", "store"],
       "answer": "Price: ₹3999+ (India), $499+ (International), based on requirements. Features: Custom theme, product catalog, payment gateway integration, shopping cart, inventory management, order tracking, customer accounts, 1 year of hosting. Perfect for businesses launching online stores."
     },
     {
+    "category": "Pricing",
+    "topic": "E-commerce Website",
+    "tags": ["pricing", "e-commerce", "store", "shop", "online shop"],
+    "answer": "Price: ₹3999+ (India), $499+ (International), based on requirements. Features: Custom theme, product catalog, payment gateway integration, shopping cart, inventory management, order tracking, customer accounts, 1 year of hosting. Perfect for businesses launching online stores."
+  },
+  {
+    "category": "Pricing",
+    "topic": "Other Website Types",
+    "tags": ["pricing", "blog", "event", "restaurant", "education", "non-profit", "landing page"],
+    "answer": "Price: ₹1999+ (India), $599+ (International), based on requirements. Types: Blog, Event, Restaurant, Education, Non-profit, Landing Page. Features: Custom templates, responsive design, industry-specific features like ticketing for events, menu builders for restaurants, or donation forms for non-profits."
+  },
+  {
+    "category": "Pricing",
+    "topic": "Auto E-commerce Site Creation",
+    "tags": ["pricing", "auto", "ecommerce", "automatic", "website builder", "deploy", "create store"],
+    "answer": "Instantly generate and deploy your e-commerce website with our Auto E-commerce Builder. Price: ₹4999 (India), $599 (International). Features: AI-assisted store setup, ready-made product catalog structure, integrated cart, login/signup, orders, address management, admin dashboard, payment gateway setup, and automatic deployment with 1 year of hosting. Ideal for entrepreneurs who want to launch an online store quickly without coding."
+  },
+    {
       "category": "Pricing",
       "topic": "Other Website Types",
-      "tags": ["pricing", "website", "blog", "event", "restaurant", "education", "non-profit"],
+      "tags": ["pricing", "blog", "event", "restaurant", "education", "non-profit", "landing page"],
       "answer": "Price: ₹1999+ (India), $599+ (International), based on requirements. Types: Blog, Event, Restaurant, Education, Non-profit, Landing Page. Features: Custom templates, responsive design, industry-specific features like ticketing for events, menu builders for restaurants, or donation forms for non-profits."
     },
     {
       "category": "Features",
-      "topic": "Platform Features",
-      "tags": ["features", "tools", "platform", "editor"],
-      "answer": "DevCraft offers customizable templates, responsive design, e-commerce integration (Stripe, PayPal, Razorpay), SEO tools (meta tags, sitemaps), blogging platform with comment systems, contact forms, dark/light mode, animations, analytics integration (Google Analytics), social media widgets, CRM integration, and AI chatbot support. A drag-and-drop editor is under development and will be launched soon."
-    },
-    {
-      "category": "Features",
-      "topic": "Security Features",
-      "tags": ["features", "security", "website"],
-      "answer": "DevCraft ensures website security with SSL certificates, automatic backups, DDoS protection, secure payment gateways, and regular software updates. Optional two-factor authentication (2FA) is available for portfolio portal accounts."
-    },
-    {
-      "category": "Features",
-      "topic": "Performance Optimization",
-      "tags": ["features", "performance", "website", "speed"],
-      "answer": "Websites built with DevCraft are optimized for speed with image compression, lazy loading, CDN integration, and minified CSS/JS. Average page load time is under 2 seconds on standard hosting plans."
-    },
-    {
-      "category": "Features",
-      "topic": "AI Chatbot Integration",
-      "tags": ["features", "ai", "chatbot", "support"],
-      "answer": "DevCraft supports integration of AI-driven chatbots for customer support on websites. Contact the development team at dussauday469@gmail.com or yalamanchilimanikanta005@gmail.com for implementation details and additional costs."
+      "topic": "All Features Overview",
+      "tags": ["features", "tools", "platform", "editor", "security", "performance", "ai", "chatbot", "support"],
+      "answer": "Customizable templates with responsive design.\nE-commerce integration: Stripe, PayPal, Razorpay.\nSEO tools: meta tags, sitemaps, structured data.\nBuilt-in blogging platform with comment systems.\nContact forms with spam protection.\nDark/light mode support and smooth animations.\nAnalytics integration (e.g., Google Analytics).\nSocial media widgets and CRM integration.\nAI chatbot support for customer interaction.\nDrag-and-drop editor under development.\nSecurity features: SSL certificates, DDoS protection, automatic backups, secure payment gateways, and regular updates.\nOptional two-factor authentication (2FA) for portfolio portal accounts.\nPerformance optimization: image compression, lazy loading, CDN support, minified CSS/JS.\nOptimized load times: under 2 seconds on standard hosting.\nFor AI chatbot implementation, contact: devcraftz.in@gmail.com."
     },
     {
       "category": "Themes",
       "topic": "Cool Serenity",
-      "tags": ["themes", "serenity", "palette"],
-      "answer": "Description: Calm, professional design with a modern aesthetic. Palette: Sky Blue (#4A90E2), White (#F7F9FC), Navy (#2E3A59). Use case: Portfolios, business sites, consulting firms. Features: Clean typography, subtle animations."
+      "tags": ["themes", "suggestions", "mostly used", "best theme", "most recently used", "popular", "minimal design", "modern aesthetic", "professional look", "portfolio theme", "business website", "consulting", "clean UI", "trending themes", "user favorite", "top rated", "calm colors", "elegant style", "serenity"],
+      "answer": "Cool Serenity features a calm, professional design with a modern aesthetic. Palette: Sky Blue (#4A90E2), White (#F7F9FC), Navy (#2E3A59). Ideal for portfolios, business websites, and consulting firms. Key features include clean typography and subtle animations for a smooth user experience."
     },
     {
       "category": "Themes",
       "topic": "Warm Sunset",
-      "tags": ["themes", "sunset", "palette"],
+      "tags": ["themes", "sunset", "vibrant", "event", "restaurant", "creative"],
       "answer": "Description: Vibrant, warm design for engaging websites. Palette: Orange (#F5A623), Coral (#FF6B6B), Cream (#FFF8E7). Use case: Event, restaurant, or creative websites. Features: Bold call-to-action buttons, dynamic layouts."
     },
     {
       "category": "Themes",
       "topic": "Muted Elegance",
-      "tags": ["themes", "elegance", "palette"],
+      "tags": ["themes", "elegance", "non-profit", "education", "professional"],
       "answer": "Description: Sophisticated and subtle design. Palette: Soft Gray (#D3D3D3), Teal (#4682B4), Charcoal (#333333). Use case: Non-profit, education, or professional services websites. Features: Minimalist navigation, elegant fonts."
     },
     {
       "category": "Themes",
       "topic": "Earthy Natural",
-      "tags": ["themes", "natural", "palette"],
+      "tags": ["themes", "natural", "portfolio", "blog", "eco-friendly"],
       "answer": "Description: Organic, grounded aesthetic. Palette: Olive Green (#6B7280), Beige (#F5F5DC), Brown (#8B4513). Use case: Portfolios, blogs, eco-friendly brands. Features: Nature-inspired icons, soft gradients."
     },
     {
       "category": "Themes",
       "topic": "Minimalist Theme",
-      "tags": ["themes", "minimalist", "palette"],
+      "tags": ["themes", "minimalist", "portfolio", "corporate", "startup"],
       "answer": "Description: Clean, simple design with neutral tones. Palette: White (#FFFFFF), Light Gray (#E0E0E0), Dark Gray (#333333). Use case: Portfolios, corporate websites, startups. Features: High-contrast text, spacious layouts."
     },
     {
       "category": "Themes",
       "topic": "Vibrant Theme",
-      "tags": ["themes", "vibrant", "palette"],
+      "tags": ["themes", "vibrant", "portfolio", "marketing", "agency"],
       "answer": "Description: Bold, colorful design to capture attention. Palette: Red (#FF5733), Amber (#FFC107), Crimson (#C70039). Use case: Creative portfolios, marketing sites, agencies. Features: Animated transitions, vibrant hover effects."
     },
     {
       "category": "Templates",
+      "topic": "Template and Theme Count",
+      "tags": ["templates", "themes", "total", "all", "template count", "theme count", "available templates", "available themes", "how many", "list of themes", "list of templates", "design options", "UI kits", "website designs"],
+      "answer": "DevCraftz offers a library of design assets for various website needs.\nCurrently, there are 10 professionally designed templates for use cases like portfolios, e-commerce, blogs, business sites, and non-profits.\nAdditionally, there are 6 unique themes, each with distinct color palettes, design aesthetics, and layout styles for customization.\nAll templates and themes are responsive, SEO-friendly, and compatible with the upcoming drag-and-drop editor."
+    },
+    {
+      "category": "Templates",
       "topic": "Website Templates",
-      "tags": ["templates", "website", "customization"],
-      "answer": "Available for: Portfolio, E-commerce, Blog, Business, Landing Page, Non-profit, Event, Restaurant, Education, Personal Branding. All templates are fully customizable, responsive, SEO-optimized, and support dark/light mode switching. Clients can preview templates before finalizing."
+      "tags": ["templates", "website templates"],
+      "answer": "Available templates: Portfolio, E-commerce, Blog, Business, Landing Page, Non-profit, Event, Restaurant, Education, Personal Branding.\nAll templates are fully customizable and responsive.\nSEO-optimized for better visibility and performance.\nSupports both dark and light mode switching.\nClients can preview templates before finalizing."
     },
     {
       "category": "Customization",
       "topic": "Website Customization",
-      "tags": ["customization", "design", "website"],
-      "answer": "Clients can edit their website files directly via the dashboard to customize content, layouts, and features. A drag-and-drop editor is under development. For advanced customizations like unique widgets or specific integrations, contact the development team at dussauday469@gmail.com or yalamanchilimanikanta005@gmail.com for additional costs."
+      "tags": ["customization", "design", "edit"],
+      "answer": "Clients can edit their website files directly via the dashboard to customize content, layouts, and features. A drag-and-drop editor is under development. For advanced customizations like unique widgets or specific integrations, contact the development team at devcraftz.in@gmail.com for additional costs."
     },
     {
       "category": "Customization",
       "topic": "Branding Support",
       "tags": ["customization", "branding", "social media"],
-      "answer": "DevCraft provides exportable assets and social media templates to help clients maintain a consistent brand presence across platforms like social media or mobile apps. Contact the development team for specific guidance and customization options."
+      "answer": "DevCraftz provides exportable assets and social media templates to help clients maintain a consistent brand presence across platforms like social media or mobile apps. Contact the development team at devcraftz.in@gmail.com for specific guidance and customization options."
     },
     {
       "category": "Contacts",
       "topic": "Developer Contact Info",
-      "tags": ["contacts", "support", "sales", "inquiries"],
-      "answer": "Support Email: dussauday469@gmail.com, Sales Email: yalamanchilimanikanta005@gmail.com, Alternate Email: support@portfolio.com, Phone: +91 6304478845, Alternate Phone: (123) 456-7890, Contact Page: https://devcraft.com/contact, Live Chat: https://portfolio.com/chat, Support Hours: Monday to Friday, 9 AM - 5 PM IST (India) or 9 AM - 5 PM EST (International)."
+      "tags": ["contacts", "support", "sales", "inquiries", "email", "phone"],
+      "answer": "Support Email: devcraftz.in@gmail.com, Phone: +91 6304478845, Contact Page: https://tinyurl.com/DevCraftwebsite, Support Hours: Monday to Friday, 9 AM - 5 PM IST (India)"
     },
     {
       "category": "Support",
       "topic": "Customer Support Process",
-      "tags": ["support", "assistance", "help"],
-      "answer": "Contact support via email, phone, or live chat. Basic plan includes email support with 48-hour response time. Premium plans offer priority email and live chat with 24-hour response. Submit tickets at https://devcraft.com/support. Escalation: Unresolved issues are escalated to senior support within 72 hours."
+      "tags": ["support", "assistance", "help", "ticket"],
+      "answer": "Contact support via email, phone, or live chat. Basic plan includes email support with 48-hour response time. Premium plans offer priority email and live chat with 24-hour response. Submit tickets at https://tinyurl.com/DevCraftwebsite. Escalation: Unresolved issues are escalated to senior support within 72 hours."
     },
     {
       "category": "Website Types",
@@ -177,139 +190,187 @@
       "category": "App Installation",
       "topic": "Web App Installation",
       "tags": ["app", "pwa", "installation", "mobile"],
-      "answer": "Install DevCraft’s Progressive Web App (PWA) for quick access to tools. Link: https://devcraft.com/install-pwa or https://portfolio.com/install-pwa. Instructions: Visit the link, click 'Add to Home Screen' in your browser (Chrome, Safari, Edge, Firefox), and follow prompts. Troubleshooting: Clear browser cache or ensure a stable internet connection if installation fails."
+      "answer": "Install DevCraftz’s Progressive Web App (PWA) for quick access to tools. Link: https://tinyurl.com/DevCraftwebsite. Instructions: Visit the link, click 'Add to Home Screen' in your browser (Chrome, Safari, Edge, Firefox), and follow prompts. Troubleshooting: Clear browser cache or ensure a stable internet connection if installation fails."
     },
     {
       "category": "Portfolio Portal",
       "topic": "Portfolio Management",
       "tags": ["portal", "login", "portfolio", "management"],
-      "answer": "Manage your portfolio at https://devcraft.com/login or https://portfolio.com/login. Features: Edit all website features (e.g., content, images, settings) via a client dashboard. Instructions: Log in with your registered email and password. Reset password at https://devcraft.com/reset or https://portfolio.com/reset. For major changes, contact the development team at dussauday469@gmail.com. Troubleshooting: Clear browser cache or contact support if login fails."
+      "answer": "Manage your portfolio at https://tinyurl.com/DevCraftwebsite. Features: Edit all website features (e.g., content, images, settings) via a client dashboard. Instructions: Log in with your registered email and password. Reset password at https://tinyurl.com/DevCraftwebsite. For major changes, contact the development team at devcraftz.in@gmail.com. Troubleshooting: Clear browser cache or contact support if login fails."
     },
     {
       "category": "Development",
       "topic": "Website Development Timeline",
       "tags": ["development", "timeline", "launch"],
-      "answer": "The timeline for building and launching a website depends on client requirements. Very basic websites (e.g., Basic Portfolio, Blog) take 1-2 business days. Standard projects require a minimum of 5-6 business days. Contact the development team at dussauday469@gmail.com for specific timelines based on your needs."
+      "answer": "The timeline for building and launching a website depends on client requirements. Very basic websites (e.g., Basic Portfolio, Blog) take 1-2 business days. Standard projects require a minimum of 5-6 business days. Contact the development team at devcraftz.in@gmail.com for specific timelines based on your needs."
     },
     {
       "category": "Management",
       "topic": "Website Data Backup",
       "tags": ["backup", "data", "management"],
-      "answer": "Clients can back up their website data (content, images, settings) locally on their own machines. DevCraft does not currently offer specialized backup support. Contact the development team at dussauday469@gmail.com for assistance with backup processes."
+      "answer": "Clients can back up their website data (content, images, settings) locally on their own machines. DevCraftz does not currently offer specialized backup support. Contact the development team at devcraftz.in@gmail.com for assistance with backup processes."
     },
     {
       "category": "Management",
       "topic": "Content Limits",
-      "tags": ["limits", "content", "website"],
-      "answer": "The number of products, blog posts, or pages is flexible based on client requirements. Additional costs may apply for large-scale content needs. Contact the development team at dussauday469@gmail.com to discuss specific limits and pricing."
+      "tags": ["limits", "content"],
+      "answer": "The number of products, blog posts, or pages is flexible based on client requirements. Additional costs may apply for large-scale content needs. Contact the development team at devcraftz.in@gmail.com to discuss specific limits and pricing."
     },
     {
       "category": "Monitoring",
       "topic": "Website Performance Monitoring",
       "tags": ["monitoring", "performance", "analytics"],
-      "answer": "DevCraft focuses primarily on portfolio building and does not currently offer built-in performance monitoring tools like uptime monitoring or visitor statistics. Clients can use third-party tools like Google Analytics or contact the development team at dussauday469@gmail.com for custom monitoring solutions."
+      "answer": "DevCraftz focuses primarily on portfolio building and does not currently offer built-in performance monitoring tools like uptime monitoring or visitor statistics. Clients can use third-party tools like Google Analytics or contact the development team at devcraftz.in@gmail.com for custom monitoring solutions."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Portfolio Cost",
       "tags": ["faq", "pricing", "portfolio"],
       "answer": "Basic Portfolio: ₹799 (India), $99 (International). Premium Portfolio: ₹1399 (India), $199 (International). Includes hosting, themes, and support. See Pricing section for details."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "E-commerce Cost",
       "tags": ["faq", "pricing", "e-commerce"],
       "answer": "E-commerce Website: ₹3999+ (India), $499+ (International), depending on customization (e.g., product catalog size, payment gateways). See Pricing section for details."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Contact Support",
       "tags": ["faq", "contacts", "support"],
-      "answer": "Reach support via email (dussauday469@gmail.com or support@portfolio.com), phone (+91 6304478845 or (123) 456-7890), or live chat (https://portfolio.com/chat). Hours: Mon-Fri, 9 AM - 5 PM IST/EST."
+      "answer": "Reach support via email (devcraftz.in@gmail.com), phone (+91 6304478845), or live chat at https://tinyurl.com/DevCraftwebsite. Hours: Mon-Fri, 9 AM - 5 PM IST."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Web App Installation",
       "tags": ["faq", "app", "installation"],
-      "answer": "Visit https://devcraft.com/install-pwa or https://portfolio.com/install-pwa, click 'Add to Home Screen' in your browser (Chrome, Safari, Edge, Firefox), and follow prompts. Contact support if issues arise."
+      "answer": "Visit https://tinyurl.com/DevCraftwebsite, click 'Add to Home Screen' in your browser (Chrome, Safari, Edge, Firefox), and follow prompts. Contact support at devcraftz.in@gmail.com if issues arise."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "SEO Features",
       "tags": ["faq", "seo", "features"],
-      "answer": "DevCraft includes SEO tools like meta tag customization, alt text for images, XML sitemap generation, schema markup, and integration with Google Analytics/Search Console for improved rankings."
+      "answer": "DevCraftz includes SEO tools like meta tag customization, alt text for images, XML sitemap generation, schema markup, and integration with Google Analytics/Search Console for improved rankings."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Payment Gateways",
       "tags": ["faq", "e-commerce", "payment"],
-      "answer": "E-commerce sites support Stripe, PayPal, Razorpay, and more. Custom integrations available; contact sales at yalamanchilimanikanta005@gmail.com for details."
+      "answer": "E-commerce sites support Stripe, PayPal, Razorpay, and more. Custom integrations available; contact sales at devcraftz.in@gmail.com for details."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Hosting Renewal",
       "tags": ["faq", "hosting", "pricing"],
-      "answer": "Hosting is included for 1-2 years depending on the plan. Renewal costs vary based on plan and storage needs; contact support@portfolio.com or dussauday469@gmail.com for a quote."
+      "answer": "Hosting is included for 1-2 years depending on the plan. Renewal costs vary based on plan and storage needs; contact devcraftz.in@gmail.com for a quote."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Custom Domain",
-      "tags": ["faq", "domain", "website"],
-      "answer": "Connect a custom domain via the portfolio portal at https://devcraft.com/login. Instructions are provided in the dashboard. Contact support for setup assistance."
+      "tags": ["faq", "domain"],
+      "answer": "Connect a custom domain via the portfolio portal at https://tinyurl.com/DevCraftwebsite. Instructions are provided in the dashboard. Contact support at devcraftz.in@gmail.com for setup assistance."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Website Maintenance",
       "tags": ["faq", "maintenance", "support"],
-      "answer": "Optional maintenance plans include updates, backups, security patches, and performance optimization. Contact sales at yalamanchilimanikanta005@gmail.com for pricing."
+      "answer": "Optional maintenance plans include updates, backups, security patches, and performance optimization. Contact sales at devcraftz.in@gmail.com for pricing."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Refund Policy",
       "tags": ["faq", "refund", "pricing"],
-      "answer": "Refunds are evaluated case-by-case within 7 days of purchase. Contact support@portfolio.com or dussauday469@gmail.com to discuss eligibility and process."
+      "answer": "Refunds are evaluated case-by-case within 7 days of purchase. Contact devcraftz.in@gmail.com to discuss eligibility and process."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Website Migration",
-      "tags": ["faq", "migration", "website"],
-      "answer": "DevCraft supports migrating existing websites. Provide details via https://devcraft.com/contact. Costs vary based on complexity; contact sales for a quote."
+      "tags": ["faq", "migration"],
+      "answer": "DevCraftz supports migrating existing websites. Provide details via https://tinyurl.com/DevCraftwebsite. Costs vary based on complexity; contact sales at devcraftz.in@gmail.com for a quote."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Multilingual Websites",
-      "tags": ["faq", "multilingual", "website"],
-      "answer": "Create multilingual websites with language switchers and translated content. Supported via plugins or custom development. Contact support for setup guidance."
+      "tags": ["faq", "multilingual"],
+      "answer": "Create multilingual websites with language switchers and translated content. Supported via plugins or custom development. Contact support at devcraftz.in@gmail.com for setup guidance."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Analytics Setup",
       "tags": ["faq", "analytics", "tracking"],
-      "answer": "Integrate Google Analytics, custom dashboards, or other tracking tools via the portfolio portal. Instructions available at https://devcraft.com/login. Contact support for advanced setups."
+      "answer": "Integrate Google Analytics, custom dashboards, or other tracking tools via the portfolio portal. Instructions available at devcraftz.in@gmail.com. Contact support for advanced setups."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Backup Frequency",
       "tags": ["faq", "backup", "security"],
-      "answer": "Automatic backups occur daily for premium plans and weekly for basic plans. Manual backups can be triggered via the portfolio portal. Restore requests: contact support."
+      "answer": "Automatic backups occur daily for premium plans and weekly for basic plans. Manual backups can be triggered via the portfolio portal. Restore requests: contact support at devcraftz.in@gmail.com."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Third-Party Integrations",
       "tags": ["faq", "integrations", "tools"],
-      "answer": "DevCraft supports integrations with Google Maps, Mailchimp, HubSpot, Eventbrite, Yelp, and more. Custom integrations available; contact sales at yalamanchilimanikanta005@gmail.com."
+      "answer": "DevCraftz supports integrations with Google Maps, Mailchimp, HubSpot, Eventbrite, Yelp, and more. Custom integrations available; contact sales at devcraftz.in@gmail.com."
     },
     {
-      "category": "FAQs",
+      "category": "FAQ",
       "topic": "Accessibility Features",
-      "tags": ["faq", "accessibility", "website"],
-      "answer": "Websites include accessibility features like alt text, keyboard navigation, and WCAG-compliant templates. Contact support for advanced accessibility customization."
+      "tags": ["faq", "accessibility"],
+      "answer": "Websites include accessibility features like alt text, keyboard navigation, and WCAG-compliant templates. Contact support at devcraftz.in@gmail.com for advanced accessibility customization."
+    },
+    {
+      "category": "Onboarding",
+      "topic": "Getting Started",
+      "tags": ["onboarding", "get started", "sign up", "how to start", "new user"],
+      "answer": "To get started with DevCraftz, visit https://tinyurl.com/DevCraftwebsite to sign up. Choose a plan (Basic, Premium, or E-commerce), select a template, and access your dashboard to customize your site. For assistance, contact support at devcraftz.in@gmail.com."
+    },
+    {
+      "category": "Trial",
+      "topic": "Trial or Demo Request",
+      "tags": ["trial", "demo", "free trial", "preview", "test"],
+      "answer": "Interested in trying DevCraftz? Contact sales at devcraftz.in@gmail.com to request a demo or inquire about preview options. Template previews are available at https://tinyurl.com/DevCraftwebsite before signing up."
+    },
+    {
+      "category": "Subscription",
+      "topic": "Subscription Management",
+      "tags": ["subscription", "upgrade", "downgrade", "cancel", "billing"],
+      "answer": "Manage your subscription via the portfolio portal at https://tinyurl.com/DevCraftwebsite. Log in to upgrade, downgrade, or cancel your plan. For billing inquiries, contact support at devcraftz.in@gmail.com."
+    },
+    {
+      "category": "Troubleshooting",
+      "topic": "Error Troubleshooting",
+      "tags": ["troubleshooting", "error", "login issue", "payment error", "template issue"],
+      "answer": "Facing issues? For login failures, clear your browser cache or reset your password at https://tinyurl.com/DevCraftwebsite. For payment or template errors, contact support at devcraftz.in@gmail.com with details for quick resolution."
+    },
+    {
+      "category": "Community",
+      "topic": "Social Media Presence",
+      "tags": ["social media", "community", "follow", "handles", "updates"],
+      "answer": "Stay connected with DevCraftz! Follow us on our social media platforms for updates and tips. Contact devcraftz.in@gmail.com for our latest social media handles or visit https://tinyurl.com/DevCraftwebsite for community links."
+    },
+    {
+      "category": "Feedback",
+      "topic": "Feedback Submission",
+      "tags": ["feedback", "suggestion", "feature request", "review"],
+      "answer": "We value your feedback! Submit suggestions or feature requests via email to devcraftz.in@gmail.com or through the contact form at https://tinyurl.com/DevCraftwebsite."
     },
     {
       "category": "Greeting",
       "topic": "Say Hello",
       "tags": ["hi", "hello", "hey", "greetings"],
       "answer": "Hi, I'm IRAH :) !! How can I assist you with your website or portfolio needs today? Ask about pricing, features, themes, or support!"
+    },
+    {
+      "category": "Farewell",
+      "topic": "Say Bye",
+      "tags": ["bye", "goodbye", "see you", "farewell", "later"],
+      "answer": "Have a nice day!"
+    },
+    {
+      "category": "Confirmation",
+      "topic": "Say Okay",
+      "tags": ["okay", "ok", "alright", "fine", "sare"],
+      "answer": "Thank you, do you need any other thing?"
     }
   ]
 }

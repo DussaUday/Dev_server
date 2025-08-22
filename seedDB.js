@@ -1,9 +1,14 @@
 import mongoose from 'mongoose';
 import Intent from './models/Intent.js';
-import intents from './intents.json' assert { type: 'json' };
 import dotenv from 'dotenv';
+import fs from 'fs';
+
 dotenv.config();
-mongoose.connect(process.env.MONGO_URI).then(() => console.log('MongoDB connected for seeding'))
+
+const intents = JSON.parse(fs.readFileSync('./intents.json', 'utf-8'));
+
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB connected for seeding'))
   .catch(err => console.error('MongoDB connection error:', err.message, err.stack));
 
 const seedDB = async () => {
