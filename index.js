@@ -9,9 +9,9 @@ import multer from 'multer';
 import authRoutes from './routes/auth.js';
 import portfolioRoutes from './routes/portfolio.js';
 import chatRoutes from './routes/chatRoutes.js';
-import { embedText, cosineSimilarity } from './utils/embeddingUtils.js';
+
 import ecommerceRoutes from './routes/ecommerce.js';
-import { loadPdfAndChunk } from './utils/pdfUtils.js';
+
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -54,25 +54,10 @@ if (missingEnvVars.length > 0) {
   process.exit(1);
 }
 
-async function initializeServer() {
-  try {
-    await mongoose.connect(process.env.MONGO_URI);
-    console.log('MongoDB connected');
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err.message));
 
-    console.log('📄 Loading PDF and generating embeddings...');
-    const chunks = await loadPdfAndChunk(pdfPath);
-    console.log(`Loaded ${chunks.length} text chunks from PDF`);
-    if (chunks.length > 0) {
-      console.log('Sample chunk:', chunks[0].substring(0, 100) + '...');
-    }
-    const embeddings = await embedText(chunks);
-    console.log(`Generated ${embeddings.length} embeddings`);
-    initializePDFData(chunks, embeddings);
-    console.log('✅ PDF loaded and embeddings ready!');
-  } catch (error) {
-    console.error('❌ Initialization failed:', error);
-    process.exit(1);
-  }
 
   app.use('/api/auth', authRoutes);
   app.use('/api/portfolio', portfolioRoutes);
