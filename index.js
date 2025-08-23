@@ -10,7 +10,6 @@ import authRoutes from './routes/auth.js';
 import portfolioRoutes from './routes/portfolio.js';
 import chatRoutes from './routes/chatRoutes.js';
 import { embedText, cosineSimilarity } from './utils/embeddingUtils.js';
-import { initializePDFData } from './controllers/chatController.js';
 import ecommerceRoutes from './routes/ecommerce.js';
 import { loadPdfAndChunk } from './utils/pdfUtils.js';
 import path from 'path';
