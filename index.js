@@ -9,9 +9,7 @@ import multer from 'multer';
 import authRoutes from './routes/auth.js';
 import portfolioRoutes from './routes/portfolio.js';
 import chatRoutes from './routes/chatRoutes.js';
-
 import ecommerceRoutes from './routes/ecommerce.js';
-
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -58,36 +56,32 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err.message));
 
+app.use('/api/auth', authRoutes);
+app.use('/api/portfolio', portfolioRoutes);
+app.use('/api/chat', chatRoutes);
+app.use('/api/ecommerce', ecommerceRoutes);
 
-  app.use('/api/auth', authRoutes);
-  app.use('/api/portfolio', portfolioRoutes);
-  app.use('/api/chat', chatRoutes);
-  app.use('/api/ecommerce', ecommerceRoutes);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+});
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(buildPath, 'index.html'));
+const io = new Server(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+    credentials: true,
+  },
+});
+
+io.on('connection', (socket) => {
+  console.log('New client connected');
+  socket.on('chatMessage', (msg) => {
+    io.emit('message', msg);
   });
-
-  const io = new Server(server, {
-    cors: {
-      origin: '*',
-      methods: ['GET', 'POST'],
-      credentials: true,
-    },
+  socket.on('disconnect', () => {
+    console.log('Client disconnected');
   });
+});
 
-  io.on('connection', (socket) => {
-    console.log('New client connected');
-    socket.on('chatMessage', (msg) => {
-      io.emit('message', msg);
-    });
-    socket.on('disconnect', () => {
-      console.log('Client disconnected');
-    });
-  });
-
-  const PORT = process.env.PORT || 5000;
-  server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-}
-
-initializeServer();
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
