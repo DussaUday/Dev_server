@@ -13,4 +13,3 @@ const getChatResponse = async (req, res) => {
 };
 
 export default getChatResponse;
-
