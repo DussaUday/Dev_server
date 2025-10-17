@@ -12,6 +12,7 @@ import chatRoutes from './routes/chatRoutes.js';
 import ecommerceRoutes from './routes/ecommerce.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { initWhatsApp } from './services/whatsappService.js'; // Import WhatsApp service
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ const pdfPath = path.join(process.cwd(), 'pdfs', 'DevCraftz_Overview.pdf');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+initWhatsApp();
 
 // All origins are allowed
 const allowedOrigins = [
@@ -42,8 +44,14 @@ app.use(cors(corsOptions));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
-const buildPath = path.join(__dirname, '../client/build');
-app.use(express.static(buildPath));
+// In your backend index.js
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ 
+    status: 'OK', 
+    message: 'Server is running',
+    timestamp: new Date().toISOString()
+  });
+});
 
 const requiredEnvVars = ['MONGO_URI', 'JWT_SECRET', 'GITHUB_TOKEN', 'VERCEL_TOKEN', 'GITHUB_USERNAME'];
 const missingEnvVars = requiredEnvVars.filter((varName) => !process.env[varName]);
@@ -61,9 +69,6 @@ app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/ecommerce', ecommerceRoutes);
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
-});
 
 const io = new Server(server, {
   cors: {
